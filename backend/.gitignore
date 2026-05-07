@@ -9,9 +9,7 @@ pnpm-debug.log*
 # ========================
 # Environment Variables
 # ========================
-.env
-.env.*
-!.env.example
+
 
 # ========================
 # Logs

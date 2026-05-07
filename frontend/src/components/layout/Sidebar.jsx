@@ -79,17 +79,16 @@ const filteredMenu = useMemo(
           <div
             className={`
             p-2 rounded-xl
-           bg-linear-to-br from-blue-400 to-indigo-700
           `}>
-            {/* <Sparkles className="w-6 h-6 text-blue-500" /> */}
-            <img src={logo}  alt="" />
+            <Sparkles className="w-6 h-6 text-blue-500" />
+            {/* <img src={logo}  alt="" /> */}
           </div>
-          {/* <div>
+          <div>
             <p className="font-bold text-lg bg-linear-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-              RICHWEAR PRO
+              POS LAB PRO
             </p>
             <p className="text-xs opacity-60">Business Management</p>
-          </div> */}
+          </div>
         </div>
 
         <div className="px-4 py-2">

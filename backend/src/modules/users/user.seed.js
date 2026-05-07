@@ -11,14 +11,14 @@ export const seedSystemUsers = async () => {
   /* =========================
      1️⃣ SUPER ADMIN
   ========================= */
-  const superAdminEmail = "superadmin@system.com";
+  const superAdminEmail = "superadmin@poslab.com";
 
   const superExists = await db
     .collection("users")
     .findOne({ email: superAdminEmail });
 
   if (!superExists) {
-    const superPassword = await bcrypt.hash("Super@126Richwear", 10);
+    const superPassword = await bcrypt.hash("superadmin@poslab.com", 10);
 
     await db.collection("users").insertOne({
       name: "Super Admin",
@@ -41,14 +41,14 @@ export const seedSystemUsers = async () => {
   /* =========================
      2️⃣ DEFAULT ADMIN
   ========================= */
-  const adminEmail = "admin@richwear.com";
+  const adminEmail = "admin@poslab.com";
 
   const adminExists = await db
     .collection("users")
     .findOne({ email: adminEmail });
 
   if (!adminExists) {
-    const adminPassword = await bcrypt.hash("Admin@126Richwear", 10);
+    const adminPassword = await bcrypt.hash("admin@poslab.com", 10);
 
     const adminPermissions = flattenPermissions({
       SYSTEM: PERMISSIONS.SYSTEM,

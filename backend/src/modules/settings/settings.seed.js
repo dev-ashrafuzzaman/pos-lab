@@ -14,9 +14,9 @@ export const seedSettings = async (db) => {
     {
       key: "COMPANY_INFORMATIONS",
       value: {
-        name: "Codivoo Technologies",
+        name: "Pos Lab Clothing POS Software",
         phone: "01711347754",
-        email: "info@codivoo.com",
+        email: "info@poslab.bd",
         address: "Dhaka, Bangladesh",
         currency: "BDT",
         timezone: "Asia/Dhaka"
